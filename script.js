@@ -1,6 +1,4 @@
-
 AOS.init();
-
 (function () {
     "use strict";
 
@@ -97,7 +95,7 @@ AOS.init();
     });
 
     /**
-     * Scroll with offset on links with a class name .scrollto
+     * Scrool with ofset on links with a class name .scrollto
      */
     on(
         "click",
@@ -120,7 +118,7 @@ AOS.init();
     );
 
     /**
-     * Scroll with offset on page load with hash links in the URL
+     * Scroll with ofset on page load with hash links in the url
      */
     window.addEventListener("load", () => {
         if (window.location.hash) {
@@ -149,10 +147,10 @@ AOS.init();
     /**
      * Skills animation
      */
-    let skillsContent = select(".skills-content");
-    if (skillsContent) {
+    let skilsContent = select(".skills-content");
+    if (skilsContent) {
         new Waypoint({
-            element: skillsContent,
+            element: skilsContent,
             offset: "80%",
             handler: function (direction) {
                 let progress = select(".progress .progress-bar", true);
@@ -164,7 +162,7 @@ AOS.init();
     }
 
     /**
-     * Portfolio isotope and filter
+     * Porfolio isotope and filter
      */
     window.addEventListener("load", () => {
         let portfolioContainer = select(".portfolio-container");
@@ -242,6 +240,7 @@ AOS.init();
                 slidesPerView: 1,
                 spaceBetween: 20,
             },
+
             1200: {
                 slidesPerView: 3,
                 spaceBetween: 20,
